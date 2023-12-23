@@ -17,7 +17,7 @@ if proceed.lower() == "y":
   tip_amount = changetype_bill * (changetype_tip/100)
   total_bill_withtip = changetype_bill + tip_amount
   share = input("How many people are splitting the bill? ")
-  share_bill = total_bill_withtip/int(share)
+  share_bill = round((total_bill_withtip/int(share)),2)
   print(f"Bill per person is {share_bill}")
       
 
